@@ -30,10 +30,10 @@ public class AuthorizationActionExecutor {
   }
 
   public void execute(final JSONArray args, final CallbackContext callbackContext, final OneginiCordovaPlugin client) {
-    if (isPreviousAuthorizationCompleted()) {
+    //if (isPreviousAuthorizationCompleted()) {
       saveCallbackContextForGlobalUsage(callbackContext);
       authorize(args, client);
-    }
+    //}
   }
 
   private void authorize(final JSONArray args, final OneginiCordovaPlugin client) {
